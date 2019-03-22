@@ -1,0 +1,48 @@
+<ion-view view-title="Ana Sayfa">
+  <ion-nav-buttons side="secondary">
+    <button class="button" ng-click="engelliDegistir()" style="background-color:rgb(248,248,248); border-width: 0px; ">
+      <img class="icon" ng-if="!engelli" src="img/engelliOff.png" height="32px"  >
+      <img class="icon" ng-if="engelli" src="img/engelliOn.png" height="32px"  >
+      </button>
+      &nbsp;
+    </ion-nav-buttons>
+  <ion-content>
+    <br><br>
+        <div style="text-align:center;">
+          <img src="img/amblem2.png" width="80%" >
+            <!--<img src="img/amblem2.png" >    -->
+        </div>
+<br>
+<!--<ul class="list">
+
+  <li class="item item-toggle">
+     Engelli Misiniz?
+     <label class="toggle toggle-assertive">
+       <input type="checkbox" ng-model="engelliModel" ng-init="engelliModel=false">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+  </li> 
+</ul>-->
+<div class="padding" >
+    <button class="button button-positive button-block" ng-click="barcode(engelli)" style="border-radius: 10px; background-color:#158da9">
+    <i class="icon icon-left ion-ios-barcode-outline" style="color:white; float:left">  </i>
+    QR Kod Okut
+    </button>
+         <button class="button button-positive button-block" style="border-radius: 10px; background-color:rgb(21, 141, 169)" ng-click="yardim()">
+      <i class="icon icon-left ion-ios-help-outline" style="color:white; float:left">  </i>
+      Yardım
+    </button>
+
+    <button class="button button-assertive button-block" ng-click="deneme(engelli)" style="border-radius: 10px;">
+      Harita
+    </button>
+
+    <!--<button class="button button-assertive button-block" style="border-radius: 30px;">
+ÇIKIŞ
+    </button>-->
+    </div>
+
+  </ion-content>
+</ion-view>

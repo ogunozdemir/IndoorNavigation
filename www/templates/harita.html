@@ -1,0 +1,43 @@
+<ion-view view-title="Harita">
+    <ion-nav-buttons side="secondary">
+      <button class="button" ng-click="barcode()" style="border-radius: 30px; background-color:#b72131; color:white;">
+        <i class="icon icon-left ion-ios-barcode-outline" style="color:white;">
+                </i>
+        QR Tara
+      </button>
+    </ion-nav-buttons>
+  <ion-content class="padding">
+      <ion-scroll zooming="true" delegate-handle="scroller" direction="xy" style="height: {{ekranHeight}}px;" >
+      <div id="harita" class="parent">
+          <img class="image1" id="rota" src="{{harita}}" />
+          <img class="image2" style="visibility: hidden;" id="buradasinizRota" src="img/buradasinizRota.png"  />
+          <img class="image3" style="visibility: hidden;" id="buradasinizKonum" src="img/buradasinizKonum.png"  />
+            <!--<canvas id="myCanvas" class="image2" width="67" height="56" style="border:4px solid red;"> </canvas>-->
+      </div>
+      <!--<button class="button-assertive button button-block" onclick="durdur();">DURDUR</button>-->
+      
+       <!--<button  class="button button-positive" onclick="hedefFunc(1391,357);konumGuncelle(1391,357);">K0</button> 
+       <button  class="button button-positive" onclick="hedefFunc(1381,235);konumGuncelle(1381,235);">K1</button>
+       <button  class="button button-positive" onclick="baslangicBelirle()">Baslangic b.</button>      -->
+      </ion-scroll>
+  </ion-content>
+</ion-view>
+
+<!--<ion-scroll zooming="true" direction="xy" >
+      <div id="harita" class="parent">
+          <img class="image1" src="img/rota2.jpg" />
+          <img class="image2" id="buradasinizRota" src="img/buradasinizRota.png"  />
+          <img class="image3" id="buradasinizKonum" src="img/buradasinizKonum.png"  />
+      </div>
+       <button  class="button button-positive" onclick="baslangicBelirle()">Baslangic b.</button>
+       <button  class="button button-positive" onclick="hedefFunc(84,216)">K0</button>
+       <button  class="button button-positive" onclick="hedefFunc(360,250)">K1</button>
+       <button  class="button button-positive" onclick="hedefFunc(632,105)">K2</button>
+       <button  class="button button-positive" onclick="hedefFunc(282,414)">K3</button>
+       <button  class="button button-positive" onclick="merdivenGit(84,216)">M0</button>
+       <button  class="button button-positive" onclick="merdivenGit(360,250)">M1</button>
+       <button  class="button button-positive" onclick="merdivenGit(632,105)">M2</button>
+       <button  class="button button-positive" onclick="merdivenGit(282,414)">M3</button>
+       <button  class="button button-positive" onclick="merdivenGit(153,237)">M4</button>
+       
+      </ion-scroll>-->
